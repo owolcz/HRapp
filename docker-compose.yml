@@ -4,6 +4,8 @@ services:
     build: .
     ports:
       - "80:80"
+    volumes:
+      - ./public:/var/www/html/public
   db:
     image: mysql:5.7
     environment:
