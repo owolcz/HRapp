@@ -1,12 +1,14 @@
-version: '3'
+version: '3.9'  # Użyj wersji 3.9 lub nowszej, aby zapewnić wsparcie dla opcji 'platform'
 services:
   web:
+    platform: linux/amd64
     build: .
     ports:
       - "80:80"
     volumes:
       - ./public:/var/www/html/public
   db:
+    platform: linux/amd64
     image: mysql:5.7
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
