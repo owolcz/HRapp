@@ -4,8 +4,7 @@
     <title>HR APP</title>
 </head>
 <body>
-<h1>Strona powitalna</h1>
-<p>Zarejestruj się</p>
+<h1>Logowanie</h1>
 <div>
     <form>
         <label for="email">E-mail</label> <br>
@@ -14,11 +13,7 @@
         <label for="password">Hasło</label><br>
         <input type="password" id="password" name="password"><br>
 
-        <label for="password-repeat">Powtórz hasło</label><br>
-        <input type="password" id="password-repeat" name="password-repeat"><br>
-
-        <button>Rejestracja</button><br>
-        <a href="login.php">Posiadasz już konto? Zaloguj się</a>
+        <button>Logowanie</button><br>
     </form>
 </div>
 </body>
